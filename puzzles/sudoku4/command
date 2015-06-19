@@ -1,0 +1,1 @@
+cat temp | sed 's/\t/0/g' | sed 's/^[ ]/0/g' | sed 's/0\([1-9]\)/\1/g' | tr -s ' ' > 1

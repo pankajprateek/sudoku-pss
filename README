@@ -1,0 +1,20 @@
+Code for PSS: ./PSS
+Code for IPSS: ./IPSS
+Order-2 sudoku puzzles: ./puzzles/sudoku2
+Order-3 sudoku puzzles: ./puzzles/sudoku3
+Order-4 sudoku puzzles: ./puzzles/sudoku4
+Sudoku puzzle generator: ./puzzles/generate2.cpp  #for 4X4 puzzles
+Sudoku puzzle generator: ./puzzles/generate3.cpp  #for 9X9 puzzles
+
+For order-n puzzle:
+
+1. Go to ./PSS
+2. Edit model.h and change the const int N to n
+3. Edit main.cpp and change noonfiles to change the number of puzzles you want PSS to solve
+4. Recompile and run by issuing "make clean", then "make" and "./sudoku"
+5. Similarly for IPSS
+
+To generate new puzzles:
+1. Go to ./puzzles
+2. edit generate.cpp and change GRID_SIZE to 2 or 3 as desired
+3. Recompile with flags --generate --solution
